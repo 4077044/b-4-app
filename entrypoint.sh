@@ -264,7 +264,7 @@ ss://$(echo "chacha20-ietf-poly1305:${UUID}@[2606:4700::]:443" | base64 -w0)?obf
 *******************************************
 Clash:
 ----------------------------
-- {name: B4a-${URL%.b4a.run}-Vl-$v4l$v4, type: vless, server: [2606:4700::], port: 443, uuid: ${UUID}, tls: true, servername: \${ARGO_DOMAIN}, skip-cert-verify: false, network: ws, ws-opts: {path: ${WP}l?ed=2048, headers: { Host: \${ARGO_DOMAIN}}}, udp: true}
+- {name: B4a-${APP_NAME}-Vl-$v4l$v4, type: vless, server: [2606:4700::], port: 443, uuid: ${UUID}, tls: true, servername: \${ARGO_DOMAIN}, skip-cert-verify: false, network: ws, ws-opts: {path: ${WP}l?ed=2048, headers: { Host: \${ARGO_DOMAIN}}}, udp: true}
 ----------------------------
 - {name: B4a-${URL%.b4a.run}-Vm-$v4l$v4, type: vmess, server: [2606:4700::], port: 443, uuid: ${UUID}, alterId: 0, cipher: none, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: ${WP}?ed=2048, headers: {Host: \${ARGO_DOMAIN}}}, udp: true}
 ----------------------------
